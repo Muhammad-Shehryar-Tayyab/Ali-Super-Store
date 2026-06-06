@@ -59,7 +59,7 @@ export default function Hero() {
           >
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-auto lg:h-[600px]">
               <img 
-                src="/images/hero.png" 
+                src={`${import.meta.env.BASE_URL}images/hero.png`} 
                 alt="Vibrant grocery store display at Ali Super Store" 
                 className="w-full h-full object-cover"
               />

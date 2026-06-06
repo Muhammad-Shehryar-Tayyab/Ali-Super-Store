@@ -92,7 +92,7 @@ export default function Products() {
                 <div className="aspect-[4/3] overflow-hidden relative">
                   <div className={`absolute inset-0 bg-gradient-to-t ${category.color} z-10 opacity-60 group-hover:opacity-100 transition-opacity duration-300`}></div>
                   <img 
-                    src={category.image} 
+                    src={`${import.meta.env.BASE_URL}${category.image.replace(/^\//, "")}`} 
                     alt={category.title} 
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
                   />

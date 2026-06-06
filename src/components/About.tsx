@@ -54,7 +54,7 @@ export default function About() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-square sm:aspect-[4/3] lg:aspect-auto lg:h-[600px]">
               <img 
-                src="/images/about.png" 
+                src={`${import.meta.env.BASE_URL}images/about.png`} 
                 alt="Inside Ali Super Store" 
                 className="w-full h-full object-cover"
               />
